@@ -1,8 +1,8 @@
 import pandas as pd
 
 
-def load_sms_spam():
-    spam_file = pd.read_csv('./dataSets/spam.csv', encoding='latin-1', engine='python')
+def load_sms_spam(file_name):
+    spam_file = pd.read_csv(file_name, encoding='latin-1', engine='python')
     temp = []
     spam_array = []
 
@@ -14,6 +14,9 @@ def load_sms_spam():
     for i in range(len(temp)):
         spam_array.append(temp[i].split(" "))
 
+
     return spam_array
+
+#%%
 
 #%%
