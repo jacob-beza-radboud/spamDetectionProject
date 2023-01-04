@@ -16,4 +16,3 @@ def reshape_for_model(array, nr_features):
                 length -= 1
         else:
             continue
-#%%
