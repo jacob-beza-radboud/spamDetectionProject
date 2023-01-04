@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def load_sms_spam(file_name):
+def load_spam(file_name):
     spam_file = pd.read_csv(file_name, encoding='latin-1', engine='python')
     temp = []
     spam_array = []
